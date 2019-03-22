@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Формы</title>
+    </head>
+    <body>
+        <form name="form">
+            <fieldest>
+                <legend>Данные об абитуриенте:</legend>
+                <p><label for="lastname">Фамилия</label></p>
+                <input type="text" name="lastname" required/>
+                <p><label for="name">Имя</label></p> 
+                <input type="text" name="name"required/>
+                <p><label for="secondname">Отчество</label></p>
+                <input type="text" name="secondname"required/>
+                <p><label for="gender">Пол:</label>
+                <input id="female" type="radio" name="gender" value="f" checked>
+                <label for="female">Женский</label>
+                <input id="male" type="radio" name="gender" value="m">
+                <label for="male">Мужской</label></p>
+                <p><label for="date">Дата рождения</label></p>
+                <input type="date" name="date"required/>
+                <p><label for="EGYE">ЕГЭ</label></p>
+                <p><input type="number" name="EGYE"required/></p>
+                <p><label for="predmet">Экзамены</label></p>
+                <select name="predmet" size="5"
+                multiple="multiple">
+                <option value="math"selected="selected">Математика</option>
+                <option value="russian">Русский язык</option>
+                <option value="english">Английский</option>
+                <option value="biology">Биология</option>
+                <option value="history">История</option>
+                </select>
+                <p><input type="reset" value="Очистить"</p>
+                <input type="submit" value="Добавить">
+            </fieldest>
+        </form>
+    </body>
+</html>
